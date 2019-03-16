@@ -102,6 +102,7 @@ div.bottom-pattern {
 }
 .it {
     border: 2px solid black;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 div.ff {
@@ -111,12 +112,43 @@ div.tt {
     width: 30px;
     height: 30px;
 }
+div.it > span {
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    color: white;
+}
+
+div.it > span.selected {
+    background: rgba(255,255,0,0.3);
+}
+.selected-red {
+    background-color:rgba(255,0,0,0.3);
+}
+
 .it > img {
     width: 100%;
 }
 .page-two > div.bottom {
     height: 50px;
     background: black;
+}
+
+
+.page-two-grid {
+    display: grid;
+    height: 186px;
+    width: 310px;
+    margin: auto;
+    grid-template-columns: repeat(10, 30px);
+    grid-auto-rows: 30px;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+.page-two-grid>div {
+    border: 1px solid grey;
 }
 
 
